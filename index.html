@@ -2,12 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Titillium+Web" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+
     <title>My link-in-bio</title>
 
     <style>
+      html {
+        min-height: 100%;
+      }
       body {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 16px;
+        color: white;
+        min-height: 100%;
+        margin: 0;
         padding-top: 40px;
         padding-bottom: 40px;
+        background: linear-gradient(0deg, #453c5b, #4f5178, #546795, #537fb0, #4d98ca, #42b2e0, #32cdf2, #26e8ff); /* made at https://learnui.design/tools/gradient-generator.html */
       }
 
       .avatar-image{
@@ -17,9 +31,9 @@
         border-radius: 128px;
       }
 
-      * {
-        border: 1px red solid;
-      }
+      /* * {
+        border: 1px red dotted;
+      } */
 
       .images {
         width: 48px;
@@ -27,7 +41,53 @@
         border-radius: 48px;
         object-fit: cover;
       }
-      
+
+      a {
+        color: greenyellow;
+        text-decoration: none;
+      }
+
+      .item {
+        background-color: lightskyblue;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: 'Dosis', sans-serif;
+        font-size: 48px;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+
+ 
     </style>
 
 
@@ -40,27 +100,27 @@
     <div class="main-container">
 
       <div class="image-row">
-        <img class="avatar-image" src="/images/brigitte-elsner-vHPtcJOa_3w-unsplash.jpg" alt="Miraziz Handamir profile picture">
+        <img class="avatar-image" src="/images/avatar_pic.jpeg" alt="Miraziz Handamir profile picture">
       </div>
 
         <div class="name-row">Miraziz Handamir</div>
 
-        <div class="social-icon-row">
+        <div class="social-icons-row">
 
           <a href="https://github.com/AzizzMir" target="_blank">
-            Github
+            <i class="fa-brands fa-github"></i> Github
           </a>
 
           <a href="https://linkedin.com/in/mireziz" target="_blank">
-            LinkedIn
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
           </a>
 
           <a href="https://www.instagram.com/azizmir_/" target="_blank">
-            Instagram
+            <i class="fa-brands fa-instagram"></i> Instagram
           </a>
 
           <a href="https://www.facebook.com/profile.php?id=61551693106130" target="_blank">
-            Facebook
+            <i class="fa-brands fa-facebook"></i> Facebook
           </a>
         </div>
 
@@ -69,7 +129,7 @@
           <div class="item">
             <img class="images" src="/images/alaska.png" alt="picture of alaska">
 
-            <a href="https://www.celebritycruises.com/blog/most-beautiful-places-in-alaska" target="_blank">
+            <a class="link-text" href="https://www.celebritycruises.com/blog/most-beautiful-places-in-alaska" target="_blank">
               View in Alaska
             </a>
           </div>
@@ -77,7 +137,7 @@
           <div class="item">
             <img class="images" src="/images/early_bird__4167147039.png" alt="early bird">
 
-            <a href="https://www.chriswinfield.com/waking-up-early-secrets/" target="_blank">
+            <a class="link-text" href="https://www.chriswinfield.com/waking-up-early-secrets/" target="_blank">
               The benifit of waking up early
             </a>
           </div>
@@ -85,7 +145,7 @@
           <div class="item">
             <img class="images" src="/images/computer__423639723.png" alt="picture of computer">
 
-            <a href="https://www.jetbrains.com/code-with-me/" target="_blank">
+            <a class="link-text" href="https://www.jetbrains.com/code-with-me/" target="_blank">
               Jetbrains new feature: code with me
             </a>
           </div>
